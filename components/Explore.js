@@ -29,7 +29,7 @@ const Explore = () => {
         <FlatList
           data={data}
           renderItem={({ item }) => {
-            return <ExploreCard item={item} />;
+            return <ExploreCard item={item} key={item.index} />;
           }}
         />
       </Box>

@@ -1,46 +1,44 @@
-import React from "react";
-import { Box, Flex, Text, Icon, Center } from "native-base";
+import React, { useState } from "react";
+import { Box, Flex, Icon, Center, IconButton } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import NavigationButton from "./NavigationButton";
 
 const AppNavigation = () => {
+  const [selected, setSelected] = useState(1);
   return (
-    <Box w="100%" h="120" bg="dark.100" color="secondary.50" shadow="10">
+    <Box w="100%" h="100" bg="dark.100" color="secondary.50" shadow="10">
       <Flex direction="row" justify="space-around" align="center">
         <Center py={5}>
-          <Icon
-            color="neutral.50"
-            mb="1"
-            as={<MaterialCommunityIcons name="home" />}
-            size="sm"
+          <NavigationButton
+            icon={"home"}
+            sel={1}
+            selected={selected}
+            setter={setSelected}
           />
-          {/* <Text color="neutral.50">home</Text> */}
         </Center>
         <Center>
-          <Icon
-            color="neutral.50"
-            mb="1"
-            as={<MaterialCommunityIcons name="google-controller" />}
-            size="sm"
+          <NavigationButton
+            icon={"google-controller"}
+            sel={2}
+            selected={selected}
+            setter={setSelected}
           />
-          {/* <Text color="neutral.50">games</Text> */}
         </Center>
         <Center>
-          <Icon
-            color="neutral.50"
-            mb="1"
-            as={<MaterialCommunityIcons name="book-open-outline" />}
-            size="sm"
+          <NavigationButton
+            icon={"book-open-outline"}
+            sel={3}
+            selected={selected}
+            setter={setSelected}
           />
-          {/* <Text color="neutral.50">games</Text> */}
         </Center>
         <Center>
-          <Icon
-            color="neutral.50"
-            mb="1"
-            as={<MaterialCommunityIcons name="bookmark" />}
-            size="sm"
+          <NavigationButton
+            icon={"bookmark"}
+            sel={4}
+            selected={selected}
+            setter={setSelected}
           />
-          {/* <Text color="neutral.50">games</Text> */}
         </Center>
       </Flex>
     </Box>
