@@ -6,16 +6,19 @@ import FavCard from "./FavCard";
 
 const data = [
   {
+    id: 1,
     name: "one",
     genre: "genre",
     platform: "PC",
   },
   {
+    id: 2,
     name: "one",
     genre: "genre",
     platform: "XBOX",
   },
   {
+    id: 3,
     name: "one",
     genre: "genre",
     platform: "PS4",
@@ -35,10 +38,11 @@ const Favourite = () => {
           renderItem={({ item }) => {
             return (
               <FavCard
-                key={item.index}
+                key={item.id}
                 name={item.name}
                 genre={item.genre}
                 platform={item.platform}
+                path={"/view"}
               />
             );
           }}

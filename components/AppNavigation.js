@@ -1,43 +1,46 @@
 import React, { useState } from "react";
-import { Box, Flex, Icon, Center, IconButton } from "native-base";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Box, Flex, Center } from "native-base";
 import NavigationButton from "./NavigationButton";
 
 const AppNavigation = () => {
-  const [selected, setSelected] = useState(1);
+  const [selected, setSelected] = useState("/");
   return (
     <Box w="100%" h="100" bg="dark.100" color="secondary.50" shadow="10">
       <Flex direction="row" justify="space-around" align="center">
         <Center py={5}>
           <NavigationButton
             icon={"home"}
-            sel={1}
+            sel={"/"}
             selected={selected}
             setter={setSelected}
+            path="/"
           />
         </Center>
         <Center>
           <NavigationButton
             icon={"google-controller"}
-            sel={2}
+            sel={"/games"}
             selected={selected}
             setter={setSelected}
+            path="/games"
           />
         </Center>
         <Center>
           <NavigationButton
             icon={"book-open-outline"}
-            sel={3}
+            sel={"/view"}
             selected={selected}
             setter={setSelected}
+            path="/view"
           />
         </Center>
         <Center>
           <NavigationButton
             icon={"bookmark"}
-            sel={4}
+            sel={"/fav"}
             selected={selected}
             setter={setSelected}
+            path="/fav"
           />
         </Center>
       </Flex>
