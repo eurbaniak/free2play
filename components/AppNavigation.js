@@ -31,7 +31,7 @@ const AppNavigation = () => {
             sel={"/view"}
             selected={selected}
             setter={setSelected}
-            path="/view"
+            // path="/xx"
           />
         </Center>
         <Center>
@@ -40,7 +40,7 @@ const AppNavigation = () => {
             sel={"/fav"}
             selected={selected}
             setter={setSelected}
-            path="/fav"
+            // path="/fav"
           />
         </Center>
       </Flex>

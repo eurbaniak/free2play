@@ -32,7 +32,13 @@ const Explore = () => {
         <FlatList
           data={data}
           renderItem={({ item }) => {
-            return <ExploreCard item={item} key={item.id} />;
+            return (
+              <ExploreCard
+                item={item}
+                key={item.id}
+                path={`/view/${item.id}`}
+              />
+            );
           }}
         />
       </Box>

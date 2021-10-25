@@ -6,26 +6,24 @@ import FavCard from "./FavCard";
 
 const data = [
   {
-    id: 1,
+    id: "1",
     name: "one",
     genre: "genre",
     platform: "PC",
   },
   {
-    id: 2,
+    id: "2",
     name: "one",
     genre: "genre",
     platform: "XBOX",
   },
   {
-    id: 3,
+    id: "3",
     name: "one",
     genre: "genre",
     platform: "PS4",
   },
 ];
-
-console.log("fav");
 
 const Favourite = () => {
   return (
@@ -42,7 +40,7 @@ const Favourite = () => {
                 name={item.name}
                 genre={item.genre}
                 platform={item.platform}
-                path={"/view"}
+                path={`/view/${item.id}`}
               />
             );
           }}

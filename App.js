@@ -25,7 +25,7 @@ export default function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/games" component={Games} />
-            <Route exact path="/view" component={ViewGame} />
+            <Route exact path="/view/:id" component={ViewGame} />
           </Switch>
           <AppNavigation />
         </Center>

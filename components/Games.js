@@ -4,31 +4,31 @@ import ExploreCard from "./ExploreCard";
 
 const data = [
   {
-    id: 1,
+    id: "1",
     title: "TEST",
     genre: "MMORPG",
     platform: "PC",
   },
   {
-    id: 2,
+    id: "2",
     title: "TEST",
     genre: "MMORPG",
     platform: "PC",
   },
   {
-    id: 3,
+    id: "3",
     title: "TEST",
     genre: "MMORPG",
     platform: "PC",
   },
   {
-    id: 4,
+    id: "4",
     title: "TEST",
     genre: "MMORPG",
     platform: "PC",
   },
   {
-    id: 5,
+    id: "5",
     title: "TEST",
     genre: "MMORPG",
     platform: "PC",

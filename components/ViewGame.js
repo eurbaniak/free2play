@@ -2,7 +2,9 @@ import React from "react";
 import { Box, Text, Button, Flex, Heading, Image, Center } from "native-base";
 import Test from "../assets/test.png";
 
-const ViewGame = ({ item }) => {
+const ViewGame = ({ match }) => {
+  let id = match.params.id;
+  console.log(id);
   return (
     <Flex direction="column" w="100%" pt="10" justify="space-between" flex={1}>
       <Flex align="center">
@@ -20,7 +22,7 @@ const ViewGame = ({ item }) => {
         h="20"
         _pressed={{ bg: "primary.100" }}
         mx="5"
-        my="1.5"
+        my="5"
       >
         <Text fontSize="xl">Check out</Text>
       </Button>
